@@ -150,7 +150,6 @@ const f = (array) => {
     }
 
     logger()
-    
+
     return null
 }
-console.log(f([1,2,3]))
