@@ -52,5 +52,11 @@ const extractCurrencyValue = (source) => {
         throw new Error("parameter must be a string")
     }
 
-    return parseInt(source.replace(/[^\d]/g, ''))
+    const result = parseInt(source.replace(/[^\d]/g, ''))
+
+    if(isNaN(result)) {
+        return source
+    } else {
+        return result
+    }
 }    
